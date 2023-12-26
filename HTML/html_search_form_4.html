@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googel&Reddit</title>
+</head>
+<body>
+    <h1>Google and Reddit searcher</h1>
+    <form action="https://www.google.com/search?q=">
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Google_2011_logo.png/800px-Google_2011_logo.png?20130708141330"></p>
+        <p>
+        <input type="text" id="search_info" name="q" placeholder="Search">
+        <button><img src="https://cdn-icons-png.flaticon.com/512/4287/4287542.png" width="25px" height="25px"></button>
+        </p>
+    </form>
+    <form action="https://www.youtube.com/results?">
+        <input type="text" name="search_query">
+        <button>search on youtube</button>
+    </form>
+
+    <!-- radio buttons check box -->
+    <form action="https://www.youtube.com">
+        <input type="checkbox" name="agree_tos" id="agee">
+        <label for="agree">i agreee to evereythink</label>
+        <button>admit</button>
+        <p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="sex"><br>
+            <label for="female">female</label>
+            <input type="radio" id="female" name="sex"><br>
+            <label for="uncertain">i dont want to say that</label>
+            <input type="radio" id="uncertain" name="sex">
+        
+        </p>
+    </form>
+    <!-- select acilir menu -->
+    <p>
+        <label for="province">please slect your province</label>
+        <select name="province" id="province">
+            <option value="izmir" selected>izmir</option>
+            <option value="konya">konya</option>
+            <option value="manisa">manisa</option>
+            
+        </select>
+    </p>
+    <button>Submit</button>
+    <!-- range  -->
+    <p> 
+        <label for="amount">amount of numbers</label>
+        <input type="range" id="amount" name="miktar" min="0" max="12">
+    </p>
+    <p>
+        <label for="request">any special request</label>
+        <textarea id="request"></textarea>
+    </p>
+    <!-- formlarda zorunlu girilnesi gereken seyler fe sifre olustururken ki durumlar -->
+    <!-- required syntaxi ile zorunlu girilmesi gereken kisimlari da kulaniriz -->
+    <p>
+        <form action="/go">
+        <h1>Validation dogrulama</h1>
+        <label for="zorunlu">adinizi girin</label>
+        <input type="text" id="zorunlu"name="name" required maxlength="12" minlength="4">
+        <button>submit</button>
+        </form>
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action="/go_somewhere">
+        <!-- <label> input icin bilgi godtermek icin yazilir hangi input icin olsugunu beliermek icin for kuanilir -->
+        <label for="name_input" >What is your name</label>
+        <label for="color">select your color</label>
+        <label for="month">select your age</label>
+        <!-- input kulanicaisan bilgi almak icin kulanilir id ile labeline baglanilir type ile tipi belirlenlir -->
+        <!-- kutu bosken icinde gozukecek meatin icin placeholder -->
+        <input type="text" id="name_input" name="name_inputs" placeholder="enter your name">
+        <!-- input types -->
+        <input type="color" id="color" placeholder="green">
+        <br>
+        <input type="password" id="month" placeholder="password">
+        <br>
+        <input type="month">
+        <br>
+        <input type="number" placeholder="enter no">
+        <br>
+        <label for="check">what is your gender</label><br>
+        <input type="checkbox" id="check">
+        <br>
+        <input type="checkbox" id="check">
+        <br><br><br><br><br><br><br><br><br>
+        <p>
+            <label for="userName" >Enter Your Name:</label><br>
+            <input id="userName" type="text" placeholder="enter name" name="name_int">
+        </p>
+        <p>
+            <label for="userAge">Enter Your Age</label><br>
+            <input id="userAge" type="number" placeholder="enter age" name="age_int">
+        </p>
+        <!-- buttons   -->
+        <button>Submit</button>
+    </form>
+   
+</body>
+</html>
